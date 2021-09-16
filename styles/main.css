@@ -1,9 +1,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Barlow', sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+}
+
+.heading-secondary {
+  font-family: 'Fraunces', sans-serif;
+  font-weight: 900;
+}
+
+.btn-secondary {
+  border: none;
+  background: none;
+  font-family: 'Fraunces', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  position: relative;
+}
+
+.btn-secondary::after {
+  position: absolute;
+  content: '';
+  width: 110%;
+  height: 10px;
+  left: -5%;
+  bottom: -1px;
+  z-index: -1;
+  border-radius: 10px;
+  opacity: .4;
+}
+
+.section--about__options {
+  background-position: 50% 0%;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 90%;
+}
+
+.section--about__options--title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.section--about__options--text {
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+}
+
+.section--header__hero {
+  background-image: url("/images/mobile/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  text-align: center;
+  height: 100vh;
+}
+
+.section--header__hero .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section--header__hero--text {
+  color: white;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  letter-spacing: 6.5px;
+  margin-top: 23%;
+  position: relative;
+}
+
+.section--header__hero--text::after {
+  position: absolute;
+  content: url("../images/icon-arrow-down.svg");
+  top: 140%;
+  left: 47%;
+}
+
+.section--about__img--img {
+  width: 100%;
+}
+
+.section--about__description {
+  text-align: center;
+}
+
+.section--about__description--title {
+  font-size: 2.5rem;
+  margin-top: 5rem;
+}
+
+.section--about__description--text {
+  color: #818498;
+  line-height: 2.4rem;
+  font-size: 1.5rem;
+  margin: 3rem auto;
+}
+
+.section--about__description--btn {
+  margin-bottom: 4rem;
+}
+
+.section--about__description .btn-yellow::after {
+  background: #fad400;
+}
+
+.section--about__description .btn-red::after {
+  background: #fe7867;
+}
+
+.section--about__graphic-design {
+  background-image: url("../images/mobile/image-graphic-design.jpg");
+}
+
+.section--about__graphic-design--title {
+  color: #25564b;
+}
+
+.section--about__graphic-design--text {
+  color: #25564b;
+}
+
+.section--about__photography {
+  background-image: url("../images/mobile/image-photography.jpg");
+}
+
+.section--about__photography--title {
+  color: #19536b;
+}
+
+.section--about__photography--text {
+  color: #19536b;
 }
 /*# sourceMappingURL=main.css.map */

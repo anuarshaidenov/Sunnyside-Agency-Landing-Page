@@ -1,0 +1,101 @@
+@import 'colors';
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+
+.section--header__hero{
+    background-image: url('/images/mobile/image-header.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    .nav{
+        display: flex;
+        padding: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &--text{
+        color: $color-white;
+        text-transform: uppercase;
+        font-size: 3.75rem;
+        letter-spacing: 6.5px;
+        margin-top: 23%;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: url('../images/icon-arrow-down.svg');
+            top: 140%;
+            left: 47%;
+        }
+    }
+}
+
+.section--about{
+    &__img{
+        &--img{
+            width: 100%;
+        }
+    }
+
+    &__description{
+        text-align: center;
+        &--title{
+            font-size: 2.5rem;
+            margin-top: 5rem;
+        }
+
+        &--text{
+            color: $color-neutral-dark-greyish-blue;
+            line-height: 2.4rem;
+            font-size: 1.5rem;
+            margin: 3rem auto;
+        }
+
+        &--btn{
+            margin-bottom: 4rem;
+        }
+
+        .btn-yellow{
+            &::after{
+                background: $color-primary-yellow;   
+            }
+        }
+        .btn-red{
+            &::after{
+                background: $color-primary-red;   
+            }
+        }
+
+
+    }
+
+    &__graphic-design{
+        background-image: url('../images/mobile/image-graphic-design.jpg');
+        
+
+        &--title{
+            color: $color-primary-dark-desaturated-cyan;
+        }
+
+        &--text{
+            color: $color-primary-dark-desaturated-cyan;
+        }
+    }
+
+    &__photography{
+        background-image: url('../images/mobile/image-photography.jpg');
+        
+
+        &--title{
+            color: $color-primary-dark-blue;
+        }
+
+        &--text{
+            color: $color-primary-dark-blue;
+        }
+    }
+}

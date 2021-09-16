@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main.css">
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -17,28 +18,39 @@
 <body>
   <header class="section--header__hero">
     <nav class="nav">
+
       <div class="nav--logo">
-        <img src="./images/logo.svg" alt="logo" class="nav--logo__img">
+        <a href="/" class="nav--logo__link">
+        <img src="./images/logo.svg" alt="logo" class="nav--logo__link--img">
+      </a>
       </div>
+
       <div class="nav--menu-icon">
         <img src="./images/icon-hamburger.svg" alt="hamburger"  class="nav--menu-icon__img">
       </div>
+
     </nav>
+
     <h1 class="section--header__hero--text">We are creatives</h1>
   </header>
+
   <section class="section--about">
-    <div class="container">
+    
       <div class="section--about__img">
         <img src="./images/mobile/image-transform.jpg" alt="An egg" class="section--about__img--img img--transform">
       </div>
 
       <div class="section--about__description">
-        <h2 class="section--about__description--title heading-secondary">Transform your brand</h2>
-        <p class="section--about__description--text paragraph">
-          We are a full-service creative agency specializing in helping brands grow fast. 
-  Engage your clients through compelling visuals that do most of the marketing for you.
-        </p>
-        <button class="section--about__description--btn btn-secondary btn-yellow">Learn more</button>
+        <div class="container">
+          <h2 class="section--about__description--title heading-secondary">Transform your brand</h2>
+          <p class="section--about__description--text paragraph">
+            We are a full-service creative agency specializing in helping brands grow fast. 
+    Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+
+          <button class="section--about__description--btn btn-secondary btn-yellow">Learn more</button>
+        
+        </div>      
       </div>
 
       <div class="section--about__img">
@@ -46,28 +58,34 @@
       </div>
 
       <div class="section--about__description">
-        <h2 class="section--about__description--title heading-secondary">Stand out to the right audience</h2>
-        <p class="section--about__description--text paragraph">
-          Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
-        </p>
-        <button class="section--about__description--btn btn-secondary btn-red">Learn more</button>
+        <div class="container">
+          <h2 class="section--about__description--title heading-secondary">Stand out to the right audience</h2>
+          <p class="section--about__description--text paragraph">
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+          </p>
+          <button class="section--about__description--btn btn-secondary btn-red">Learn more</button>
+        </div>
       </div>
 
-      <div class="section--about__graphic-design">
-        <h2 class="section--about__graphic-design--title heading-secondary heading-secondary__smaller">Graphic Design</h2>
-        <p class="section--about__graphic-design--text paragraph paragraph-smaller">
-          Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
-        </p>
+      <div class="section--about__graphic-design section--about__options">
+        <div class="container">
+          <h2 class="section--about__graphic-design--title heading-secondary heading-secondary__smaller section--about__options--title">Graphic Design</h2>
+          <p class="section--about__graphic-design--text paragraph paragraph-smaller section--about__options--text">
+            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          </p>
+        </div>
       </div>
 
-      <div class="section--about__photography">
-        <h2 class="section--about__photography--title heading-secondary heading-secondary__smaller">Photography</h2>
-        <p class="section--about__photography--text paragraph paragraph-smaller">
-          Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
-        </p>
+      <div class="section--about__photography section--about__options">
+        <div class="container">
+          <h2 class="section--about__photography--title heading-secondary heading-secondary__smaller section--about__options--title">Photography</h2>
+          <p class="section--about__photography--text paragraph paragraph-smaller section--about__options--text">
+            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          </p>
+        </div>
       </div>
 
-    </div>
+    
   </section>
 
   <section class="section--testimonials">
