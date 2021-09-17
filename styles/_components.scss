@@ -49,14 +49,11 @@
         }
 
         &--text{
-            color: $color-neutral-dark-greyish-blue;
-            line-height: 2.4rem;
-            font-size: 1.5rem;
             margin: 3rem auto;
         }
 
         &--btn{
-            margin-bottom: 4rem;
+            margin-bottom: 5rem;
         }
 
         .btn-yellow{
@@ -96,6 +93,106 @@
 
         &--text{
             color: $color-primary-dark-blue;
+        }
+    }
+}
+
+.section--testimonials{
+    text-align: center;
+
+    &__heading{
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        color: $color-neutral-grayish-blue;
+        letter-spacing: 9px;
+        margin: 5rem auto;
+    }
+
+    &__testimonial{
+        margin-bottom: 6rem;
+        &--img{
+            margin: 0 auto;
+            width: 6rem;
+            margin-bottom: 2rem;
+            &__person{
+                border-radius: 50%;
+                width: 100%;
+            }
+            
+        }
+
+        &--text{
+            color: $color-neutral-very-dark-grayish-blue;
+            margin-bottom: 2.5rem;
+        }
+
+        &--heading{
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        &--subheading{
+            color: $color-neutral-grayish-blue;
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+.section-showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    &--img{
+        transform: scaley(104%);
+        &__image{
+            width: 100%;
+        }
+    }
+}
+
+.section--footer{
+    background: rgba($color: $color-primary-dark-moderate-cyan, $alpha: .7) ;
+    text-align: center;
+
+    &__logo{
+        width: 15rem;
+        margin: 0 auto;
+        &--img{
+            margin: 5rem auto;
+            width: 100%;
+        }
+    }
+
+    &__links{
+        display: flex;
+        justify-content: center;
+        
+        &--link{
+            margin-right: 5.5rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            &__link{
+                color: $color-primary-dark-desaturated-cyan;
+            }
+        }
+    }
+
+    &__socials{
+        display: flex;
+        justify-content: center;
+        margin-top: 6rem;
+        &--social{
+            margin-right: 3rem;
+            margin-bottom: 6rem;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            &__link{
+                &--img{
+
+                }
+            }
         }
     }
 }
