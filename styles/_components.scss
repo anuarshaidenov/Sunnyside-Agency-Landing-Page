@@ -19,7 +19,7 @@
         
 
         &--menu-icon{
-            
+            z-index: 100;
             &:hover{
                 cursor: pointer;
             }
@@ -232,11 +232,6 @@
             margin-bottom: 6rem;
             &:last-of-type{
                 margin-right: 0;
-            }
-            &__link{
-                &--img{
-
-                }
             }
         }
     }

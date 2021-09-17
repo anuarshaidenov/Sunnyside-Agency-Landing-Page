@@ -102,6 +102,17 @@ ul {
   display: none;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  opacity: .8;
+  z-index: 99;
+}
+
 .section--header__hero {
   background-image: url("/images/mobile/image-header.jpg");
   background-repeat: no-repeat;
@@ -123,6 +134,10 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+}
+
+.section--header__hero .nav--menu-icon {
+  z-index: 100;
 }
 
 .section--header__hero .nav--menu-icon:hover {
