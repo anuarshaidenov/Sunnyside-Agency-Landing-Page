@@ -73,6 +73,7 @@
       content: url("../images/icon-arrow-down.svg");
       top: 140%;
       left: 47%;
+      animation: arrow 1s infinite;
     }
   }
 }
@@ -289,5 +290,19 @@
         margin-right: 0;
       }
     }
+  }
+}
+
+@keyframes arrow {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }
