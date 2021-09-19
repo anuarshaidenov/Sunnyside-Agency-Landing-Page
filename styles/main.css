@@ -363,12 +363,18 @@ ul {
   margin-right: 0;
 }
 
+.section--header__hero {
+  background-image: url("../images/desktop/image-header.jpg");
+}
+
 .section--header__hero .nav {
-  padding: 2rem;
+  padding: 1.5rem;
 }
 
 .section--header__hero .nav--logo {
   width: 170px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .section--header__hero .nav--logo__link {
@@ -398,5 +404,15 @@ ul {
 
 .section--header__hero .nav .desktop-nav-elements--element__link {
   color: white;
+  font-size: 1.1rem;
+}
+
+.section--header__hero--text {
+  margin-top: 4%;
+}
+
+.section--header__hero--text::after {
+  top: 195%;
+  left: 49%;
 }
 /*# sourceMappingURL=main.css.map */

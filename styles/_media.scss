@@ -1,8 +1,11 @@
 .section--header__hero {
+  background-image: url("../images/desktop/image-header.jpg");
   .nav {
-    padding: 2rem;
+    padding: 1.5rem;
     &--logo {
       width: 170px;
+      margin-top: auto;
+      margin-bottom: auto;
       &__link {
         width: 100%;
       }
@@ -25,8 +28,18 @@
 
         &__link {
           color: white;
+          font-size: 1.1rem;
         }
       }
+    }
+  }
+
+  &--text {
+    margin-top: 4%;
+
+    &::after {
+      top: 195%;
+      left: 49%;
     }
   }
 }
