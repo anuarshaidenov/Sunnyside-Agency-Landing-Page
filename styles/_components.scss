@@ -34,6 +34,7 @@
       background-color: $color-white;
       width: 90%;
       z-index: 100;
+      padding: 0;
 
       &::after {
         position: absolute;
@@ -110,11 +111,21 @@
     }
 
     .btn-yellow {
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
       &::after {
         background: $color-primary-yellow;
       }
     }
     .btn-red {
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
       &::after {
         background: $color-primary-red;
       }
@@ -127,10 +138,11 @@
     height: 100vh;
     text-align: center;
     padding-top: 90%;
-    padding-bottom: 50%;
+    padding-bottom: 100%;
 
     &--title {
       font-size: 2.4rem;
+      margin-top: 7rem;
       margin-bottom: 2rem;
     }
 
@@ -257,6 +269,10 @@
       }
       &__link {
         color: $color-primary-dark-desaturated-cyan;
+
+        &:hover {
+          color: white;
+        }
       }
     }
   }

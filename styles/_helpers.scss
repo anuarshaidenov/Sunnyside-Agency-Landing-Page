@@ -33,6 +33,7 @@ h1 {
   text-transform: uppercase;
   font-size: 1.3rem;
   position: relative;
+  cursor: pointer;
 
   &::after {
     position: absolute;

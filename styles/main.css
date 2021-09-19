@@ -4,11 +4,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
-* {
+body,
+html {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }
 
 body {
@@ -48,6 +56,7 @@ h1 {
   text-transform: uppercase;
   font-size: 1.3rem;
   position: relative;
+  cursor: pointer;
 }
 
 .btn-secondary::after {
@@ -141,6 +150,7 @@ ul {
   background-color: white;
   width: 90%;
   z-index: 100;
+  padding: 0;
 }
 
 .section--header__hero .nav .mobile-nav-elements::after {
@@ -215,8 +225,16 @@ ul {
   margin-bottom: 5rem;
 }
 
+.section--about__description .btn-yellow:hover::after {
+  opacity: 1;
+}
+
 .section--about__description .btn-yellow::after {
   background: #fad400;
+}
+
+.section--about__description .btn-red:hover::after {
+  opacity: 1;
 }
 
 .section--about__description .btn-red::after {
@@ -229,11 +247,12 @@ ul {
   height: 100vh;
   text-align: center;
   padding-top: 90%;
-  padding-bottom: 50%;
+  padding-bottom: 100%;
 }
 
 .section--about__options--title {
   font-size: 2.4rem;
+  margin-top: 7rem;
   margin-bottom: 2rem;
 }
 
@@ -374,6 +393,10 @@ ul {
   color: #25564b;
 }
 
+.section--footer__links--link__link:hover {
+  color: white;
+}
+
 .section--footer__socials {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -432,6 +455,13 @@ ul {
     color: white;
     font-size: 1.1rem;
   }
+  .section--header__hero .nav .desktop-nav-elements--element .btn {
+    cursor: pointer;
+  }
+  .section--header__hero .nav .desktop-nav-elements--element .btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+  }
   .section--header__hero--text {
     margin-top: 4%;
   }
@@ -444,7 +474,6 @@ ul {
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    grid-auto-rows: minmax(auto, 1fr);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -457,6 +486,9 @@ ul {
   .section--about__description {
     padding: 4rem 7rem;
     text-align: left;
+  }
+  .section--about__description--title {
+    margin-top: 1rem;
   }
   .section--about .description--transform {
     -ms-grid-column: 1;
@@ -511,6 +543,15 @@ ul {
   .section-showcase {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+  .section--footer__logo--img {
+    margin: 3rem auto;
+  }
+  .section--footer__socials {
+    margin-top: 4rem;
+  }
+  .section--footer__socials--social {
+    margin-bottom: 3rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
