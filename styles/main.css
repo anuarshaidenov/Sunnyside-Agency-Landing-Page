@@ -13,7 +13,7 @@
 
 body {
   font-size: 18px;
-  font-family: 'Barlow', sans-serif;
+  font-family: "Barlow", sans-serif;
 }
 
 img {
@@ -60,25 +60,6 @@ h1 {
   z-index: -1;
   border-radius: 10px;
   opacity: 0.4;
-}
-
-.section--about__options {
-  background-position: 50% 0%;
-  background-size: cover;
-  height: 100vh;
-  text-align: center;
-  padding-top: 90%;
-  padding-bottom: 50%;
-}
-
-.section--about__options--title {
-  font-size: 2.4rem;
-  margin-bottom: 2rem;
-}
-
-.section--about__options--text {
-  font-size: 1.25rem;
-  line-height: 1.9rem;
 }
 
 a {
@@ -201,8 +182,20 @@ ul {
   left: 47%;
 }
 
-.section--about__img--img {
+.section--about__img {
+  background-position: center;
+  background-size: cover;
   width: 100%;
+  min-height: 400px;
+  padding-top: 100%;
+}
+
+.section--about .img--egg {
+  background-image: url("../images/mobile/image-transform.jpg");
+}
+
+.section--about .img--cup {
+  background-image: url("../images/mobile/image-stand-out.jpg");
 }
 
 .section--about__description {
@@ -228,6 +221,25 @@ ul {
 
 .section--about__description .btn-red::after {
   background: #fe7867;
+}
+
+.section--about__options {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 90%;
+  padding-bottom: 50%;
+}
+
+.section--about__options--title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.section--about__options--text {
+  font-size: 1.25rem;
+  line-height: 1.9rem;
 }
 
 .section--about__graphic-design {
@@ -304,12 +316,26 @@ ul {
 }
 
 .section-showcase--img {
-  -webkit-transform: scaley(104%);
-          transform: scaley(104%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 100%;
 }
 
-.section-showcase--img__image {
-  width: 100%;
+.section-showcase .img--milk {
+  background-image: url("../images/mobile/image-gallery-milkbottles.jpg");
+}
+
+.section-showcase .img--orange {
+  background-image: url("../images/mobile/image-gallery-orange.jpg");
+}
+
+.section-showcase .img--cone {
+  background-image: url("../images/mobile/image-gallery-cone.jpg");
+}
+
+.section-showcase .img--sugar {
+  background-image: url("../images/mobile/image-gallery-sugar-cubes.jpg");
 }
 
 .section--footer {
@@ -368,6 +394,9 @@ ul {
 }
 
 @media screen and (min-width: 900px) {
+  .container {
+    width: 90%;
+  }
   .section--header__hero {
     background-image: url("../images/desktop/image-header.jpg");
   }
@@ -409,6 +438,79 @@ ul {
   .section--header__hero--text::after {
     top: 195%;
     left: 49%;
+  }
+  .section--about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(auto, 1fr);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+  }
+  .section--about__img {
+    width: 100%;
+    height: 100%;
+  }
+  .section--about__description {
+    padding: 4rem 7rem;
+    text-align: left;
+  }
+  .section--about .description--transform {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  .section--about .img--egg {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    background-image: url("../images/desktop/image-transform.jpg");
+  }
+  .section--about__options {
+    padding: 0;
+    padding-top: 60%;
+    height: 100%;
+    width: 100%;
+  }
+  .section--about__options--text {
+    width: 27rem;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+  .section--about .img--cup {
+    background-image: url("../images/desktop/image-stand-out.jpg");
+  }
+  .section--about__graphic-design {
+    background-image: url("../images/desktop/image-graphic-design.jpg");
+  }
+  .section--about__photography {
+    background-image: url("../images/desktop/image-photography.jpg");
+  }
+  .container--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .section--testimonials__heading {
+    margin-bottom: 3rem;
+  }
+  .section--testimonials__testimonial {
+    margin-right: 2rem;
+  }
+  .section--testimonials__testimonial:last-of-type {
+    margin-right: 0;
+  }
+  .section--testimonials__testimonial--text {
+    font-size: 1.3rem;
+  }
+  .section-showcase {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
   }
 }
 /*# sourceMappingURL=main.css.map */
