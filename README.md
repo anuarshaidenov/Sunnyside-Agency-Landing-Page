@@ -101,4 +101,4 @@ I will definetely use all the techniques in future projects. It was really good 
 
 - Instagram - [@044anuar](https://www.instagram.com/044anuar)
 - Frontend Mentor - [@anuarshaidenov](https://www.frontendmentor.io/profile/anuarshaidenov)
-- Twitter - [@yourusername](https://www.twitter.com/anuarnyi)
+- Twitter - [@l'anuar](https://www.twitter.com/anuarnyi)
