@@ -1,0 +1,32 @@
+.section--header__hero {
+  .nav {
+    padding: 2rem;
+    &--logo {
+      width: 170px;
+      &__link {
+        width: 100%;
+      }
+    }
+
+    &--menu-icon {
+      display: none;
+    }
+
+    .desktop-nav-elements {
+      display: flex;
+      align-items: center;
+
+      &--element {
+        margin-right: 2rem;
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+
+        &__link {
+          color: white;
+        }
+      }
+    }
+  }
+}

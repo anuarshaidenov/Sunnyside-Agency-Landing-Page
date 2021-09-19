@@ -1,214 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles/main.css">
-  
-  <title>Frontend Mentor | Sunnyside agency landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; padding: 1rem;}
-    .attribution a { color: hsl(228, 45%, 44%);}
-  </style>
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
 
-  <script defer src="./index.js"></script>
-</head>
-<body>
-  <header class="section--header__hero">
-    <nav class="nav">
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        padding: 1rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
 
-      <div class="nav--logo">
-        <a href="/" class="nav--logo__link">
-        <img src="./images/logo.svg" alt="logo" class="nav--logo__link--img">
-      </a>
-      </div>
+    <script defer src="./index.js"></script>
+  </head>
+  <body>
+    <header class="section--header__hero">
+      <nav class="nav">
+        <div class="nav--logo">
+          <a href="/" class="nav--logo__link">
+            <img
+              src="./images/logo.svg"
+              alt="logo"
+              class="nav--logo__link--img"
+            />
+          </a>
+        </div>
 
-      <div class="nav--menu-icon">
-        <img src="./images/icon-hamburger.svg" alt="hamburger"  class="nav--menu-icon__img">
-      </div>
+        <ul class="desktop-nav-elements">
+          <li class="desktop-nav-elements--element">
+            <a href="#" class="desktop-nav-elements--element__link">About</a>
+          </li>
+          <li class="desktop-nav-elements--element">
+            <a href="#" class="desktop-nav-elements--element__link">Services</a>
+          </li>
+          <li class="desktop-nav-elements--element">
+            <a href="#" class="desktop-nav-elements--element__link">Projects</a>
+          </li>
+          <li class="desktop-nav-elements--element">
+            <a href="#" class="desktop-nav-elements--element__link"
+              ><button class="btn btn--primary btn--white">Contact</button></a
+            >
+          </li>
+        </ul>
 
-      <div class="backdrop hidden"></div>
+        <div class="nav--menu-icon">
+          <img
+            src="./images/icon-hamburger.svg"
+            alt="hamburger"
+            class="nav--menu-icon__img"
+          />
+        </div>
 
-      <ul class="mobile-nav-elements hidden">
-        <li class="mobile-nav-elements--element nav--link">
-          <a href="#">About</a>
-        </li>
-        <li class="mobile-nav-elements--element nav--link">
-          <a href="#">Services</a>
-        </li>
-        <li class="mobile-nav-elements--element nav--link">
-          <a href="#">Projects</a>
-        </li>
-        <li class="mobile-nav-elements--element">
-          <a href="#" class="btn btn--primary btn--yellow">Contact</a>
-        </li>
-      </ul>
+        <div class="backdrop hidden"></div>
 
-    </nav>
+        <ul class="mobile-nav-elements hidden">
+          <li class="mobile-nav-elements--element nav--link">
+            <a href="#">About</a>
+          </li>
+          <li class="mobile-nav-elements--element nav--link">
+            <a href="#">Services</a>
+          </li>
+          <li class="mobile-nav-elements--element nav--link">
+            <a href="#">Projects</a>
+          </li>
+          <li class="mobile-nav-elements--element">
+            <a href="#" class="btn btn--primary btn--yellow">Contact</a>
+          </li>
+        </ul>
+      </nav>
 
-    <h1 class="section--header__hero--text">We are creatives</h1>
-  </header>
+      <h1 class="section--header__hero--text">We are creatives</h1>
+    </header>
 
-  <section class="section--about">
-    
+    <section class="section--about">
       <div class="section--about__img">
-        <img src="./images/mobile/image-transform.jpg" alt="An egg" class="section--about__img--img img--transform">
+        <img
+          src="./images/mobile/image-transform.jpg"
+          alt="An egg"
+          class="section--about__img--img img--transform"
+        />
       </div>
 
       <div class="section--about__description">
         <div class="container">
-          <h2 class="section--about__description--title heading-secondary">Transform your brand</h2>
+          <h2 class="section--about__description--title heading-secondary">
+            Transform your brand
+          </h2>
           <p class="section--about__description--text paragraph-gray">
-            We are a full-service creative agency specializing in helping brands grow fast. 
-    Engage your clients through compelling visuals that do most of the marketing for you.
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
           </p>
 
-          <button class="section--about__description--btn btn-secondary btn-yellow">Learn more</button>
-        
-        </div>      
+          <button
+            class="section--about__description--btn btn-secondary btn-yellow"
+          >
+            Learn more
+          </button>
+        </div>
       </div>
 
       <div class="section--about__img">
-        <img src="./images/mobile/image-stand-out.jpg" alt="An egg" class="section--about__img--img img--stand-out">
+        <img
+          src="./images/mobile/image-stand-out.jpg"
+          alt="An egg"
+          class="section--about__img--img img--stand-out"
+        />
       </div>
 
       <div class="section--about__description">
         <div class="container">
-          <h2 class="section--about__description--title heading-secondary">Stand out to the right audience</h2>
+          <h2 class="section--about__description--title heading-secondary">
+            Stand out to the right audience
+          </h2>
           <p class="section--about__description--text paragraph-gray">
-            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. 
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
           </p>
-          <button class="section--about__description--btn btn-secondary btn-red">Learn more</button>
+          <button
+            class="section--about__description--btn btn-secondary btn-red"
+          >
+            Learn more
+          </button>
         </div>
       </div>
 
       <div class="section--about__graphic-design section--about__options">
         <div class="container">
-          <h2 class="section--about__graphic-design--title heading-secondary heading-secondary__smaller section--about__options--title">Graphic Design</h2>
-          <p class="section--about__graphic-design--text paragraph paragraph-smaller section--about__options--text">
-            Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+          <h2
+            class="
+              section--about__graphic-design--title
+              heading-secondary heading-secondary__smaller
+              section--about__options--title
+            "
+          >
+            Graphic Design
+          </h2>
+          <p
+            class="
+              section--about__graphic-design--text
+              paragraph paragraph-smaller
+              section--about__options--text
+            "
+          >
+            Great design makes you memorable. We deliver artwork that
+            underscores your brand message and captures potential clients’
+            attention.
           </p>
         </div>
       </div>
 
       <div class="section--about__photography section--about__options">
         <div class="container">
-          <h2 class="section--about__photography--title heading-secondary heading-secondary__smaller section--about__options--title">Photography</h2>
-          <p class="section--about__photography--text paragraph-gray paragraph-smaller section--about__options--text">
-            Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+          <h2
+            class="
+              section--about__photography--title
+              heading-secondary heading-secondary__smaller
+              section--about__options--title
+            "
+          >
+            Photography
+          </h2>
+          <p
+            class="
+              section--about__photography--text
+              paragraph-gray paragraph-smaller
+              section--about__options--text
+            "
+          >
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
           </p>
         </div>
       </div>
+    </section>
 
-    
-  </section>
+    <section class="section--testimonials">
+      <div class="container">
+        <h2 class="section--testimonials__heading heading-secondary">
+          Client testimonials
+        </h2>
 
-  <section class="section--testimonials">
-    <div class="container">
-
-      <h2 class="section--testimonials__heading heading-secondary">Client testimonials</h2>
-
-      <div class="section--testimonials__testimonial">
-        <div class="section--testimonials__testimonial--img">
-          <img src="./images/image-emily.jpg" alt="Emily" class="section--testimonials__testimonial--img__person">
+        <div class="section--testimonials__testimonial">
+          <div class="section--testimonials__testimonial--img">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Emily"
+              class="section--testimonials__testimonial--img__person"
+            />
+          </div>
+          <p class="paragraph-gray section--testimonials__testimonial--text">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <h3
+            class="
+              heading-secondary
+              section--testimonials__testimonial--heading
+            "
+          >
+            Emily R.
+          </h3>
+          <span class="section--testimonials__testimonial--subheading paragraph"
+            >Marketing director</span
+          >
         </div>
-        <p class="paragraph-gray section--testimonials__testimonial--text">
-          We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-        </p>
-        <h3 class="heading-secondary section--testimonials__testimonial--heading">Emily R.</h3>
-        <span class="section--testimonials__testimonial--subheading paragraph">Marketing director</span>
+
+        <div class="section--testimonials__testimonial">
+          <div class="section--testimonials__testimonial--img">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Thomas"
+              class="section--testimonials__testimonial--img__person"
+            />
+          </div>
+          <p class="paragraph-gray section--testimonials__testimonial--text">
+            Sunnyside’s enthusiasm coupled with their keen interest in our
+            brand’s success made it a satisfying and enjoyable experience.
+          </p>
+          <h3
+            class="
+              heading-secondary
+              section--testimonials__testimonial--heading
+            "
+          >
+            Thomas S.
+          </h3>
+          <span class="section--testimonials__testimonial--subheading paragraph"
+            >Chief Operating Officer</span
+          >
+        </div>
+
+        <div class="section--testimonials__testimonial">
+          <div class="section--testimonials__testimonial--img">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Jennie"
+              class="section--testimonials__testimonial--img__person"
+            />
+          </div>
+          <p class="paragraph section--testimonials__testimonial--text">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <h3
+            class="
+              heading-secondary
+              section--testimonials__testimonial--heading
+            "
+          >
+            Jennie F.
+          </h3>
+          <span class="section--testimonials__testimonial--subheading paragraph"
+            >Business Owner</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section-showcase">
+      <div class="section-showcase--img">
+        <img
+          src="./images/mobile/image-gallery-milkbottles.jpg"
+          alt="Milk Bottles"
+          class="section-showcase--img__image"
+        />
       </div>
 
-      <div class="section--testimonials__testimonial">
-        <div class="section--testimonials__testimonial--img">
-          <img src="./images/image-thomas.jpg" alt="Thomas" class="section--testimonials__testimonial--img__person">
-        </div>
-        <p class="paragraph-gray section--testimonials__testimonial--text">
-          Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-        </p>
-        <h3 class="heading-secondary section--testimonials__testimonial--heading">Thomas S.</h3>
-        <span class="section--testimonials__testimonial--subheading paragraph">Chief Operating Officer</span>
+      <div class="section-showcase--img">
+        <img
+          src="./images/mobile/image-gallery-orange.jpg"
+          alt="Orange"
+          class="section-showcase--img__image"
+        />
       </div>
 
-      <div class="section--testimonials__testimonial">
-        <div class="section--testimonials__testimonial--img">
-          <img src="./images/image-jennie.jpg" alt="Jennie" class="section--testimonials__testimonial--img__person">
-        </div>
-        <p class="paragraph section--testimonials__testimonial--text">
-          Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-        </p>
-        <h3 class="heading-secondary section--testimonials__testimonial--heading">Jennie F.</h3>
-        <span class="section--testimonials__testimonial--subheading paragraph">Business Owner</span>
+      <div class="section-showcase--img">
+        <img
+          src="./images/mobile/image-gallery-cone.jpg"
+          alt="Cone"
+          class="section-showcase--img__image"
+        />
       </div>
 
-    </div>
-  </section>
+      <div class="section-showcase--img">
+        <img
+          src="./images/mobile/image-gallery-sugar-cubes.jpg"
+          alt="Sugar Cubes"
+          class="section-showcase--img__image"
+        />
+      </div>
+    </section>
 
-  <section class="section-showcase">
-    <div class="section-showcase--img">
-      <img src="./images/mobile/image-gallery-milkbottles.jpg" alt="Milk Bottles" class="section-showcase--img__image">
-    </div>
+    <footer class="section--footer">
+      <div class="section--footer__logo">
+        <img
+          class="section--footer__logo--img"
+          src="./images/logo-2.svg"
+          alt="logo"
+        />
+      </div>
 
-    <div class="section-showcase--img">
-      <img src="./images/mobile/image-gallery-orange.jpg" alt="Orange" class="section-showcase--img__image">
-    </div>
+      <ul class="section--footer__links">
+        <li class="section--footer__links--link">
+          <a class="section--footer__links--link__link" href="#">About</a>
+        </li>
+        <li class="section--footer__links--link">
+          <a class="section--footer__links--link__link" href="#">Services</a>
+        </li>
+        <li class="section--footer__links--link">
+          <a class="section--footer__links--link__link" href="#">Project</a>
+        </li>
+      </ul>
 
-    <div class="section-showcase--img">
-      <img src="./images/mobile/image-gallery-cone.jpg" alt="Cone" class="section-showcase--img__image">
-    </div>
+      <ul class="section--footer__socials">
+        <li class="section--footer__socials--social">
+          <a href="" class="section--footer__socials--social__link">
+            <img
+              class="section--footer__socials--social__link--img"
+              src="./images/icon-facebook.svg"
+              alt="Facebook"
+            />
+          </a>
+        </li>
 
-    <div class="section-showcase--img">
-      <img src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="Sugar Cubes" class="section-showcase--img__image">
-    </div>
-    
-  </section>
+        <li class="section--footer__socials--social">
+          <a href="" class="section--footer__socials--social__link">
+            <img
+              src="./images/icon-instagram.svg"
+              alt="ig"
+              class="section--footer__socials--social__link--img"
+            />
+          </a>
+        </li>
 
-  <footer class="section--footer">
-    <div class="section--footer__logo">
-      <img class="section--footer__logo--img" src="./images/logo-2.svg" alt="logo">
-    </div>
+        <li class="section--footer__socials--social">
+          <a href="" class="section--footer__socials--social__link">
+            <img
+              src="./images/icon-twitter.svg"
+              alt="twitter"
+              class="section--footer__socials--social__link--img"
+            />
+          </a>
+        </li>
 
-    <ul class="section--footer__links">
-      <li class="section--footer__links--link"><a class="section--footer__links--link__link" href="#">About</a></li>
-      <li class="section--footer__links--link"><a class="section--footer__links--link__link" href="#">Services</a></li>
-      <li class="section--footer__links--link"><a class="section--footer__links--link__link" href="#">Project</a></li>
-    </ul>
-
-    <ul class="section--footer__socials">
-
-      <li class="section--footer__socials--social">
-        <a href="" class="section--footer__socials--social__link">
-          <img class="section--footer__socials--social__link--img" src="./images/icon-facebook.svg" alt="Facebook">
-        </a>
-      </li>
-
-      <li class="section--footer__socials--social">
-        <a href="" class="section--footer__socials--social__link">
-          <img src="./images/icon-instagram.svg" alt="ig" class="section--footer__socials--social__link--img">
-        </a>
-      </li>
-
-      <li class="section--footer__socials--social">
-        <a href="" class="section--footer__socials--social__link">
-          <img src="./images/icon-twitter.svg" alt="twitter" class="section--footer__socials--social__link--img">
-        </a>
-      </li>
-
-      <li class="section--footer__socials--social">
-        <a href="" class="section--footer__socials--social__link">
-          <img src="./images/icon-pinterest.svg" alt="pinterest" class="section--footer__socials--social__link--img">
-        </a>
-      </li>
-    </ul>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="https://www.instagram.com/044anuar/" target="_blank" rel="noopener noreferrer">Anuar Shaidenov</a>.
-    </div>
-  </footer>
-  
-</body>
+        <li class="section--footer__socials--social">
+          <a href="" class="section--footer__socials--social__link">
+            <img
+              src="./images/icon-pinterest.svg"
+              alt="pinterest"
+              class="section--footer__socials--social__link--img"
+            />
+          </a>
+        </li>
+      </ul>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          href="https://www.instagram.com/044anuar/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Anuar Shaidenov</a
+        >.
+      </div>
+    </footer>
+  </body>
 </html>

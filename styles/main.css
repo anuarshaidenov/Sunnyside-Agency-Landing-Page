@@ -16,18 +16,22 @@ body {
   font-family: 'Barlow', sans-serif;
 }
 
+img {
+  width: 100%;
+}
+
 .container {
   width: 85%;
   margin: 0 auto;
 }
 
 h1 {
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-weight: 900;
 }
 
 .heading-secondary {
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   font-weight: 900;
 }
 
@@ -40,7 +44,7 @@ h1 {
 .btn-secondary {
   border: none;
   background: none;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   text-transform: uppercase;
   font-size: 1.3rem;
   position: relative;
@@ -48,14 +52,14 @@ h1 {
 
 .btn-secondary::after {
   position: absolute;
-  content: '';
+  content: "";
   width: 110%;
   height: 10px;
   left: -5%;
   bottom: -1px;
   z-index: -1;
   border-radius: 10px;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .section--about__options {
@@ -89,9 +93,10 @@ ul {
 .btn--primary {
   padding: 1.2rem 2.5rem;
   border-radius: 30px;
-  font-family: 'Fraunces', sans-serif;
+  font-family: "Fraunces", sans-serif;
   text-transform: uppercase;
   color: black;
+  border: none;
 }
 
 .btn--yellow {
@@ -109,7 +114,7 @@ ul {
   width: 100vw;
   height: 100vh;
   background-color: transparent;
-  opacity: .8;
+  opacity: 0.8;
   z-index: 99;
 }
 
@@ -356,5 +361,42 @@ ul {
 
 .section--footer__socials--social:last-of-type {
   margin-right: 0;
+}
+
+.section--header__hero .nav {
+  padding: 2rem;
+}
+
+.section--header__hero .nav--logo {
+  width: 170px;
+}
+
+.section--header__hero .nav--logo__link {
+  width: 100%;
+}
+
+.section--header__hero .nav--menu-icon {
+  display: none;
+}
+
+.section--header__hero .nav .desktop-nav-elements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section--header__hero .nav .desktop-nav-elements--element {
+  margin-right: 2rem;
+}
+
+.section--header__hero .nav .desktop-nav-elements--element:last-of-type {
+  margin-right: 0;
+}
+
+.section--header__hero .nav .desktop-nav-elements--element__link {
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

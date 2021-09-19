@@ -1,99 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
 
-.container{
-    width: 85%;
-    margin: 0 auto;
+img {
+  width: 100%;
 }
 
-h1{
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 900;
+.container {
+  width: 85%;
+  margin: 0 auto;
 }
 
-.heading-secondary{
-    font-family: 'Fraunces', sans-serif;
-    font-weight: 900;
+h1 {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
 }
 
-.paragraph-gray{
-        color: $color-neutral-dark-greyish-blue;
-        line-height: 2.4rem;
-        font-size: 1.5rem;
+.heading-secondary {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 900;
 }
 
-.btn-secondary{
-    border: none;
-    background: none;
-    font-family: 'Fraunces', sans-serif;
-    text-transform: uppercase;
-    font-size: 1.3rem;
-    position: relative;
-
-    &::after{
-        position: absolute;
-        content: '';
-        width: 110%;
-        height: 10px;
-        left: -5%;
-        bottom: -1px;
-        z-index: -1;
-        border-radius: 10px;
-        opacity: .4;
-    }
+.paragraph-gray {
+  color: $color-neutral-dark-greyish-blue;
+  line-height: 2.4rem;
+  font-size: 1.5rem;
 }
 
-.section--about__options{
-    background-position: 50% 0%;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    padding-top: 90%;
-    padding-bottom: 50%;
+.btn-secondary {
+  border: none;
+  background: none;
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  position: relative;
 
-    &--title{
-        font-size: 2.4rem;
-        margin-bottom: 2rem;
-    }
-
-    &--text{
-        font-size: 1.25rem;
-        line-height: 1.9rem;
-    }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 110%;
+    height: 10px;
+    left: -5%;
+    bottom: -1px;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0.4;
+  }
 }
 
-a{
-    color: inherit;
-    text-decoration: none;
+.section--about__options {
+  background-position: 50% 0%;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  padding-top: 90%;
+  padding-bottom: 50%;
+
+  &--title {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+
+  &--text {
+    font-size: 1.25rem;
+    line-height: 1.9rem;
+  }
 }
 
-ul{
-    list-style: none;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.btn--primary{
-    padding: 1.2rem 2.5rem;
-    border-radius: 30px;
-    font-family: 'Fraunces', sans-serif;
-    text-transform: uppercase;
-    color: black;
+ul {
+  list-style: none;
 }
 
-.btn--yellow{
-     background-color: $color-primary-yellow;
+.btn--primary {
+  padding: 1.2rem 2.5rem;
+  border-radius: 30px;
+  font-family: "Fraunces", sans-serif;
+  text-transform: uppercase;
+  color: black;
+  border: none;
 }
 
-.hidden{
-    display: none;
+.btn--yellow {
+  background-color: $color-primary-yellow;
 }
 
-.backdrop{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: transparent;
-    opacity: .8;
-    z-index: 99;
+.hidden {
+  display: none;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: transparent;
+  opacity: 0.8;
+  z-index: 99;
 }
