@@ -179,7 +179,7 @@ ul {
 .section--header__hero--text {
   color: white;
   text-transform: uppercase;
-  font-size: 3.2rem;
+  font-size: 3rem;
   letter-spacing: 6.5px;
   margin-top: 23%;
   position: relative;
@@ -466,6 +466,9 @@ ul {
   .section--header__hero .nav--menu-icon {
     display: none;
   }
+  .section--header__hero .nav .mobile-nav-elements {
+    display: none;
+  }
   .section--header__hero .nav .desktop-nav-elements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -493,6 +496,7 @@ ul {
   }
   .section--header__hero--text {
     margin-top: 4%;
+    font-size: 3.3rem;
   }
   .section--header__hero--text::after {
     top: 195%;
